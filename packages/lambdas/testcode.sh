@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "This is lambda build"
+echo "This is lambda services build"
