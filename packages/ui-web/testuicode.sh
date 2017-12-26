@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "This is ui-web build...."
+echo "This is ui-web build......"
