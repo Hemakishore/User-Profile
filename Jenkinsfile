@@ -44,7 +44,7 @@ node ('master') {
   sh 'rm -fR Pipelines'
   sh 'git clone https://github.com/pbache/Pipelines.git'
   def commonpipe = load 'Pipelines/Common.groovy'
-  //commonpipe.prep_common("${buildenv}")
-  //commonpipe.prep_common("${buildenv}")
-  //commonpipe.prep_common("${buildenv}")
+  commonpipe.setup("${buildenv}")
+  commonpipe.startup("${buildenv}")
+  commonpipe.tearDown("${buildenv}")
 }
