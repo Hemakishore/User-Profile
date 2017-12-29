@@ -1,21 +1,17 @@
 
-//ui
-	@Library('PSL') _
+//ui 
+/*
+        @Library('PSL') _
 	def common_jenkins = new ors.utils.common_jenkins(steps, env)
 	def common_scm = new ors.utils.common_scm(steps, env)
 
 	 //   environment {
-			/*
-			These variables should change according to team/project
-			*/
+			
 			def TEAM_SLACK_CHANNEL="#spg-feynman-ci"
 			def TEAM_EMAIL="m2s6m0x4t8p6v0q0@autodesk.slack.com"
 			def SERVICE_ACCOUNT=credentials('svc_p_account_id')
 			def VAULT_PATH = 'spg/feynman-dev/aws/adsk-eis-feynman-dev/sts/admin'
 			def CDN="s3://cdn-dev-manage.autodesk.com"
-			/*
-			These shouldn't change unless you have your own build container or NPM registry
-			*/
 			def NPM_REGISTRY="https://art-bobcat.autodesk.com/artifactory/"
 			def NPM_AUTH="api/npm/auth"
 			def NPM_VIRTUAL_REPO="api/npm/autodesk-npm-virtual/"
@@ -38,6 +34,8 @@
 			// Build Status
 			def SUCCESS = 'SUCCESS'
 			def isMasterBranch = false
+			
+			*/
 			
 pipeline {
 node ('master') {
